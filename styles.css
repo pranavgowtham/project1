@@ -1,0 +1,297 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body.Homepage{
+	padding-top: 300px;
+}
+body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin: 0;
+	
+	padding: 50px 0px;
+	width: 100%;
+
+}
+p{
+	text-align: justify;	
+}
+
+header{
+	position: fixed;
+	top: 0;
+	font-size: 300%;
+	background: #33CC33;
+	color: #FFFFFF;
+	height: 300px;
+	padding-top: 100px;
+	width: 100%;
+	text-align: center;
+}
+li.homepic a{
+	position: relative;
+}
+li.homepic a:before{
+	content: "\f015";
+   	font-family: FontAwesome;
+    	font-style: normal;
+    	font-weight: normal;
+    	text-decoration: inherit;
+	color: white;
+    	font-size: 20px;
+}
+
+.Pranav{
+	color: red;
+}
+.navbar{
+	position: relative;
+	top: 0;
+	z-index:160;
+	width: 100%;
+	box-shadow: 0 5px 10px #888888;
+}
+.scrolled{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index:160;
+	box-shadow: 0 5px 10px #888888;
+}
+nav.scrolled ul{
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+nav.scrolled ul:hover{
+	background-color: black;
+	opacity: 1;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+nav ul{
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+nav ul li{
+	position: relative;
+	display: inline-block;
+	background-color: black;
+	padding: 27px 40px 20px 40px;
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+
+}
+nav.scrolled ul li{
+	background-color: transparent;
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+
+}
+
+nav ul li.homepic{
+	position: relative;
+	display: inline-block;
+	padding: 20px 40px;
+
+}
+.activetab{
+	border-top-style: solid;
+	border-top-color: red;
+	
+}
+nav ul li:hover{
+	display: inline-block;
+	padding: 25px 45px;
+	font-size: 140%;
+	background-color: #474747;
+
+}
+nav ul li.homepic:hover{
+	display: inline-block;
+	padding: 25px 45px;	
+	background-color: #474747;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+li a{
+	padding:20px 25px;
+}
+
+section{
+	font-size: 130%;
+	line-height: 1.5em;
+	width:100%;
+	background-color: white;
+	position: relative;
+	z-index: 159;
+	padding: 150px 10% 0 70px;
+}
+div.contact{
+	float:right;
+	width:7%;
+	z-index:159;
+	position:fixed;
+	right:0;
+	top:370px;
+	background-color: transparent;
+	height:100%;
+
+}
+.contact div{
+	border-radius:50%;
+	box-shadow:5px 5px 5px #888888;
+	opacity:0.6;
+	position:relative;
+	margin:10px;
+	width:50px;
+	height:50px;
+	text-align: center;
+}
+.contact div:hover{
+	opacity:1;
+}
+.contact div a{
+	position: relative;
+	top:8px;
+}
+
+.fb{
+	background-color:#0033CC;
+}
+.fb a:before{
+	font-family: FontAwesome;	
+	content:"\f09a";
+	font-style: normal;
+    	font-weight: normal;
+    	text-decoration: inherit;
+	color:white;
+	font-size:30px;
+
+}
+.twitter a:before{
+	font-family: FontAwesome;	
+	content: "\f099";
+	font-style: normal;
+    	font-weight: normal;
+    	text-decoration: inherit;
+	color:#00CCFF;
+	font-size:30px;
+
+}
+.youtube{
+	background-color:red;
+}
+.youtube a:before{
+	
+	font-family: FontAwesome;	
+	content:"\f167";
+	font-style: normal;
+    	font-weight: normal;
+    	text-decoration: inherit;
+	color:white;
+	font-size:30px;
+
+}
+.MenuHandle{
+	width: 100%;
+	text-align: center;
+	padding: 10px 10px;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	display: none;
+}
+img.wrap{
+	float: right;
+	margin: 10px 10px 20px 30px;
+}
+input[type="text"], textarea{
+	padding: 10px;
+	border: solid 5px #c9c9c9;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	-webkit-transition: border 300ms linear;
+	-moz-transition: border 300ms linear; 
+}
+input[type="text"]:focus, textarea:focus{
+	border: solid 5px #969696;
+}
+input[type="submit"]{
+	padding: 10px;
+	border: solid 0px #c9c9c9;
+	background-color: #66FF66;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px #999999;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+@font-face {
+    font-family: FontAwesome;
+    src: url(fontawesome-webfont.ttf);
+}
+@media screen and (max-width: 690px){
+	header{
+		font-size: 200%;
+	}	
+	iframe{
+		width: 240px;
+		height:180px;
+		border:none;
+	}
+	img.wrap{
+		width:100%;	
+
+	}	
+	.activetab{
+		border-bottom-style: solid;
+		border-bottom-color: red;
+	
+	}	
+	section{
+		font-size:90%;
+		padding-top: 100px;
+		padding-left:50px;
+	}
+	div.contact{
+		width:10%;
+	}
+	.contact div{
+		width:20px;
+		height:20px;
+	}
+	.contact div a{
+		position: relative;	
+		top:0;
+	}
+	.contact div a:before{
+		font-size:12px;
+		
+	}
+	input[type="text"], textarea{
+		width:100%;
+	}
+	nav ul{
+		display: none;
+	}
+	.clicked{
+		display: block;
+	}
+	.MenuHandle{
+		display: block;
+	}
+	nav ul li{
+		width: 100%;
+		padding: 20px;
+		text-align: left;
+	}
+	
+
+}
